@@ -2,7 +2,7 @@ from time import sleep
 
 import pandas as pd
 
-file = pd.read_csv("cpf_.csv")
+file = pd.read_csv("./cpf_.csv")
 
 n = 0
 for i in file.index:
