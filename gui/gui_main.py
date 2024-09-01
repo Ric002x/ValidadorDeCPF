@@ -14,7 +14,9 @@ def validator():
         print("\nInsira um CPF válido!")
         raise SystemExit
 
-    if len(cpf_item) != 11:
+    if not cpf_item:
+        change_label("Insira um valor no campo abaixo", "black")
+    elif len(cpf_item) != 11:
         change_label("Este CPF não possui 11 dígitos!", "black")
     else:
         # Separando os valores para testar validação:
@@ -76,7 +78,7 @@ output_frame.place_configure(
     relwidth=1, relheight=0.2,
     relx=0, rely=0)
 
-input_frame = ctk.CTkFrame(app, fg_color='black')
+input_frame = ctk.CTkFrame(app)
 input_frame.place_configure(
     relwidth=1, relheight=0.8,
     relx=0, rely=0.2)
@@ -92,7 +94,7 @@ cpf_input.place_configure(x=50, y=100)
 validator_button = ctk.CTkButton(
     input_frame, text="Executar Validação", text_color="green",
     fg_color='transparent', bg_color="transparent", border_color='green',
-    border_width=2, font=("Arial", 16), command=validator)
+    border_width=2, font=("Arial", 16), command=validator, hover_color="white")
 validator_button.place_configure(x=80, y=150)
 
 app.mainloop()
