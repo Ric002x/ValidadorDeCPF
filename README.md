@@ -83,7 +83,13 @@ python ./terminal/main.py
  > O programa funcionará em um loop contínuo, permitindo que você insira e verifique múltiplos CPFs consecutivamente. Se desejar encerrar o programa, basta digitar 'parar' ao invés de fornecer um CPF. O programa reconhecerá o comando e encerrará a execução.
 
 **Gui**:
-> Em desenvolvimento
+
+1. Para utilizar esta versão pela interface, utilize o comando:
+```bash
+python ./gui/gui_main.py
+```
+
+2. Insira o CPF que deseja verificar, e clique em "Executar Validação".
 
 ### Versão 2
 
