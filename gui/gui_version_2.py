@@ -33,6 +33,7 @@ def validator():
                 if len(cpf_item) != 11:
                     add_label(f"O CPF de {name} {last_name}"
                               " não possui 11 dígitos", "black")
+                    continue
             except ValueError:
                 print("\nInsira um CPF válido!")
 

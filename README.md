@@ -110,3 +110,9 @@ python ./gui/gui_version_2.py
 2. Clique em "Selecionar Arquivo", escolha a planilha de dados CSV que deseja validar os CPFs, e clique em "Iniciar Validações".
 
 3. Os resultados aparecerão na área inferior da interface, retornando informações coloridas, da mesma forma que no terminal.
+
+
+## ⬆️ Possíveis Atualizações
+
+ - **Implementar atualização da planilha**:
+    - Criar/editar coluna de "Validação": Coluna que informa se o CPF x é válido ou inválido.
