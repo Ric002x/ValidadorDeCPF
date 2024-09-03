@@ -6,23 +6,25 @@ Este repositório contém um programa que valida CPFs de acordo com as normas es
 O projeto possui duas versões disponíveis para uso, ambas com a opção de rodar o software via terminal ou através de uma interface gráfica desenvolvida com CustomTkinter.
 
 ### Versão 1
-Permite que o usuário insira um CPF manualmente para validação individual.
+Nesta versão, o usuário pode inserir um CPF manualmente para realizar a validação.
 
  - **Terminal**:
- [imagem do terminal]()
+   - O usuário é solicitado a digitar um CPF, e o sistema verifica sua validade, retornando o resultado diretamente no terminal.
 
  - **Gui**:
- > Ainda em desenvolvimento
+   - A interface gráfica permite a inserção do CPF em um campo dedicado, oferecendo uma experiência mais amigável.
+![imgem da interface](./imgs/gui_1.png)
 
 ### Versão 2
 Nesta versão, o usuário pode fornecer uma planilha de dados no formato CSV, contendo pelo menos os campos "Nome", "Sobrenome" e "CPF". O validador analisará e informará se cada CPF é válido ou não.
 
  - **Terminal**:
- > Atenção: Nesta versão, a utilização do terminal foi feita apenas para testes, logo, não será pedido a entrada de um arquivo CSV, ele penas utilizar o arquivo criado para testes localizado em: `./cpf_.csv`
- [imagem do terminal]()
+   - A versão em terminal foi utilizada principalmente para testes. O sistema automaticamente carrega e valida os CPFs de um arquivo de teste localizado em `./cpf_.csv`.
 
  - **Gui**:
- [imgem da interface]()
+   - A interface gráfica permite que o usuário selecione um arquivo CSV para validação dos CPFs, proporcionando um método prático e intuitivo para processamento de múltiplos CPFs.
+
+![imgem da interface](./imgs/gui_2.png)
 
 
 ## 📋 Tecnologias E Bibliotecas Utilizadas
